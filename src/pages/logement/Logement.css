@@ -1,0 +1,65 @@
+.logement-images
+ {
+    align-items: center;
+    text-align: center;
+}
+
+.img-caroussel {
+    border-radius: 25px;
+    object-fit: cover;
+    width: 1240px;
+    height: 415px;
+}
+
+.logement-intro {
+    color: #FF6060;
+    margin: auto 100px;
+}
+.logement-title {
+    font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 36px;
+line-height: 142.6%;
+}
+.logement-location {
+font-family: 'Montserrat';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 142.6%;
+}
+.logement-tag {
+    color: white;
+    background-color: #FF6060;
+    border-radius: 10px;
+    padding: 2px;
+    margin: 5px;
+}
+.logement-photo-name-rating {
+    display: flex;
+    justify-content: flex-end;
+    margin: auto 100px;
+}
+.logement-prop {
+    border-radius: 50%;
+    width: 64px;
+}
+.group-accordion {
+    height: 300px;
+    flex-direction: row;
+    margin: auto 100px;
+    display: flex;
+    position: relative;
+}
+.logement-accordion {
+    margin: 10px 30px;
+  
+    width: 582px;
+    
+
+}
+.logement-accordion + .accordion-content {
+    display: flex;
+    flex-direction: column;
+}

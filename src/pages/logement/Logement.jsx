@@ -1,6 +1,6 @@
 import "./Logement.css"
 import Accordion from "../../components/Accordion/Accordion";
-import { Navigate, redirect, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import React,{useState, useEffect} from 'react';
 import Slider from "../../components/Carroussel/Carroussel"
 
@@ -20,7 +20,6 @@ const Logement = () => {
     })
     const data = await response.json()
     setData(data)
-    console.log(data.id);
   }
   fetchData()
 }, [setData, id])
@@ -36,7 +35,7 @@ const Logement = () => {
   
   
   <div className="logement-tags">
-  {data.tags?.map((tag) => (<div className="logement-tag">{tag}</div>))}
+  {data.tags?.map((tag, index) => (<li key={index} className="logement-tag">{tag}</li>))}
   </div></div>
   <div className="logement-photo-name-rating">
   <div className="logement-name-photo">

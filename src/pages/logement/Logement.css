@@ -12,6 +12,7 @@ font-weight: 500;
 line-height: 142.6%;
 }
 .logement-tags {
+    list-style: none;
     display: flex;
     flex-direction: row;
     margin-top: 15px;

@@ -17,7 +17,7 @@ const Accordion = ({ title, content }) => {
       </div>
           {isActive && 
           <ul className="accordion-content margin-array">
-            {content?.map((cont) => (<li className="array">{cont}</li>))}
+            {content?.map(( cont, index ) => (<li key={index} className="array">{cont}</li>))}
           </ul>
           }
       </div>

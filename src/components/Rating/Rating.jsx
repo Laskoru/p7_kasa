@@ -7,11 +7,14 @@ const Rating = ({rating}) => {
     
    
     return (
-        <box>
-            {[...new Array(ratingMax)].map((arr, index) => {
-                return index < rating ? <RiStarSFill fill="gold" className="stars" /> : <RiStarSFill fill="grey" className="stars" />;
+        <div>
+            {[...new Array(ratingMax)].map((arr, index) =>
+            
+            {
+                <li key={index} />
+                    return index < rating ? <RiStarSFill fill="gold" className="stars" /> : <RiStarSFill fill="grey" className="stars" />;
               })}
-        </box>
+        </div>
     )
 
 }

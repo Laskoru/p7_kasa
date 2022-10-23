@@ -8,7 +8,6 @@ const Slider = ({ slides }) => {
   // Empêche la seletion des images //
   document.onselectstart = (e) => { e.preventDefault() }
     const [current, setCurrent] = useState(0);
-    console.log(slides);
     const length = slides?.length;
   
     const nextSlide = () => {

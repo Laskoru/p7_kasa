@@ -6,16 +6,19 @@ import {accordionData} from "../../data/accordion"
 
 export default function About() {
     return (
-        <><div className="about-intro">   
+        <main>
+          <div className="about-intro">   
         <img className="background img" src={img} alt="paysage" />
         </div>
       
       <div className="accordion">
         {accordionData.map(({ title, content, index }) => (
-          <Accordion key={index} title={title} content={content} />
+          <li key={index}>
+            <Accordion title={title} content={content} />
+          </li>
         ))}
       </div>
-  </>
+  </main>
       
     );
   }

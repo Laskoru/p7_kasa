@@ -1,8 +1,9 @@
+
+
 h1 {
     font-family: 'Montserrat';
     font-style: normal;
-    font-weight: 700;
-    font-size: 288px;
+    width: 100%;
     line-height: 142.6%;
     text-align: center;
     color: #FF6060;
@@ -13,20 +14,58 @@ h2 {
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 500;
-font-size: 36px;
+width: 100%;
 line-height: 142.6%;
 text-align: center;
 color: #FF6060;
 margin: auto;
 }
 .return-accueil {
-margin: auto;
+
+margin: 50px auto;
 font-family: 'Montserrat';
 font-style: normal;
 font-weight: 500;
-font-size: 18px;
 line-height: 142.6%;
-text-align: center;
 text-decoration-line: underline;
 color: #FF6060;
+}
+
+@media screen and (max-width:480px) {
+    .main-404 {
+        
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+    }
+    h1 {
+        font-size: 96px;
+        
+        margin: 50px auto;
+    }
+    h2 {
+        font-size: 18px;
+        width: 70%;
+    }
+    .return-accueil {
+margin: 100px auto;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:1023px) {
+    
+}
+@media screen and (min-width:1024px) {
+    h1 {
+        font-size: 288px;
+        font-weight: 700;
+    }
+    h2 {
+        font-size: 36px;
+    }
+    .return-accueil {
+        font-size: 18px;
+    }
+    
 }

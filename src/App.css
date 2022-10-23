@@ -1,4 +1,7 @@
-.quote {
+body {
+  max-width: 1450px;
+  margin: auto;
+}.quote {
 
   font-family: 'Montserrat';
   font-style: normal;
@@ -19,23 +22,51 @@
   }
   .img {
       border-radius: 25px;
+      width: 100%;
       background: black;
+      filter: contrast(0.8);
       z-index: 1;
   }
 
-  body {
-    background: #FFFFFF;
-    max-width: 1450px;
-    margin: auto;
-  }
   main {
-    background-color: #F7F7F7;
     border-radius: 25px;
-    margin: auto 100px;
     justify-content: space-between;
     display: flex;
     flex-wrap: wrap;
-    padding: 40px;
-    margin-top: 40px;
+    margin-top: 30px;
   }
   
+
+  @media screen and (max-width:480px) {
+    body {
+      margin: auto 10px;
+    }
+    .img {
+      
+      object-fit: cover;
+      width: 95%;
+      margin: auto 10px;
+      height: 111px;
+
+    }
+    .quote {
+      font-size: 22px;
+      width: 80%;
+    }
+  }
+  @media screen and (min-width:481px) and (max-width:1023px) {
+    body {
+      margin: auto 10px;
+    }
+    .img {
+      width: 100%;
+      object-fit: cover;
+      aspect-ratio: 3/1;
+     
+    }
+    .quote {
+      font-size: 30px;
+      width: 60%;
+      text-align: left;
+    }
+  }

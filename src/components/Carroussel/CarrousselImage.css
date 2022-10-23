@@ -1,0 +1,84 @@
+
+.slider {
+  position: relative;
+}
+
+.slide-img { 
+  border-radius: 25px;
+  object-fit: cover;
+}
+
+.leftArrow, .rightArrow {
+  position: absolute;
+  color: white;
+}
+.count {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+
+}
+@media screen and (min-width:1024px) {
+  .slide-img {
+    width: 1450px;
+    aspect-ratio: 3/1;
+  }
+  .leftArrow, .rightArrow {
+    top: 45%;
+    font-size: 50px;
+  }
+  .leftArrow {
+    right: 95%;
+  }
+  .rightArrow {
+    left: 95%;
+  }
+  .count {
+    left: 50%;
+    top: 90%;
+  }
+}
+
+@media screen and (min-width:481px) and (max-width:1023px) {
+  .slide-img {
+    width: 100%;
+    aspect-ratio: 2/1
+  }
+  .count {
+    left: 50%;
+    top: 85%;
+  }
+  .leftArrow {
+    right: 90%;
+  }
+  .rightArrow {
+    left: 90%;
+  }
+  .leftArrow, .rightArrow {
+    top: 50%;
+    font-size: 40px;
+  }
+  
+}
+
+@media screen and (max-width:480px) {
+  .slide-img {
+    width: 100%;
+    aspect-ratio: 3/2;
+  }
+  .count {
+    left: 45%;
+    top: 85%;
+  }
+  .leftArrow {
+    right: 85%;
+  }
+  .rightArrow {
+    left: 85%;
+  }
+  .leftArrow, .rightArrow {
+    top: 45%;
+    font-size: 30px;
+  }
+  
+}

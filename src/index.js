@@ -1,4 +1,4 @@
-import { render } from "react-dom";
+import { createRoot } from "react-dom/client";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import App from "./App";
 import About from "./pages/about/About";
@@ -8,7 +8,8 @@ import Error from "./pages/error/Page404";
 import Logement from "./pages/logement/Logement";
 
 const rootElement = document.getElementById("root");
-render(
+const root = createRoot(rootElement);
+root.render(
   <BrowserRouter>
     <Header />
     <Routes>
@@ -18,6 +19,5 @@ render(
       <Route path="*" element={<Error />} />
     </Routes>
     <Footer />
-  </BrowserRouter>,
-  rootElement
+  </BrowserRouter>
 );

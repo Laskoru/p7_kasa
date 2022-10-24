@@ -10,6 +10,6 @@ then :
 
 to install and run the app
 
-### `json-server db.json -p 3004`
+### `npm api`
 
 to launch api on port 3004

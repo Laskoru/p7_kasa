@@ -20,7 +20,8 @@
 }
 @media screen and (min-width:1024px) {
   .slide-img {
-    width: 1450px;
+    width: 100%;
+    margin: auto;
     aspect-ratio: 3/1;
   }
   .leftArrow, .rightArrow {
@@ -28,10 +29,10 @@
     font-size: 50px;
   }
   .leftArrow {
-    right: 95%;
+    right: 90%;
   }
   .rightArrow {
-    left: 95%;
+    left: 90%;
   }
   .count {
     left: 50%;

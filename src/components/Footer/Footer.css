@@ -1,16 +1,11 @@
 footer {
-    /* margin: 40px 100px; */
-    /* height: 200px; */
     background: black;
     text-align: center;
-    /* border-radius: 25px; */
+
 }
 .quote_footer {
     color: white;
     font-family: 'Montserrat';
-    font-style: normal;
-    /* font-weight: 500;
-    font-size: 24px; */
     line-height: 142.6%;
 }
 .logo-footer {
@@ -20,9 +15,16 @@ footer {
 
 @media screen and (max-width:480px) {
     footer {
-        width: 105%;
         height: 160px ;
-        margin-left: -10px;
-        margin-right: -10px;
 }
+}
+
+@media screen and (min-width:1024px) {
+    footer {
+        margin: auto;
+        height: 200px;
+    }
+    .quote_footer {
+        font-size: 24px;
+    }
 }

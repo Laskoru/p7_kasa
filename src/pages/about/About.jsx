@@ -6,7 +6,7 @@ import {accordionData} from "../../data/accordion"
 
 export default function About() {
     return (
-        <main>
+        <body>
           <div className="about-intro">   
         <img className="background img" src={img} alt="paysage" />
         </div>
@@ -18,7 +18,7 @@ export default function About() {
           </li>
         ))}
       </div>
-  </main>
+  </body>
       
     );
   }

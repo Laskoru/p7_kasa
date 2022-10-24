@@ -25,9 +25,13 @@ const Logement = () => {
 }, [setData, id])
 
   return (
-    <main key={data.id}>
-  
+    <body key={data.id}>
+  <div className="slider">
   <Slider slides={data?.pictures} />
+
+  </div>
+  <div className="logement-info">
+
   
   <div className="logement-intro">
   <h3 className="logement-title">{data.title}</h3>
@@ -46,6 +50,7 @@ const Logement = () => {
     <Rating rating={parseInt(data.rating)} />
   </div>
   </div>
+  </div>
   <div className="group-accordion">
   <div className="logement-accordion description">
   <Accordion title="Description" content={data.description} /></div>
@@ -54,7 +59,7 @@ const Logement = () => {
   </div>
   </div>
   
-  </main>
+  </body>
   
   
     )

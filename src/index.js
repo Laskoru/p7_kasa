@@ -6,6 +6,7 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Error from "./pages/error/Page404";
 import Logement from "./pages/logement/Logement";
+import "./index.css";
 
 const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);

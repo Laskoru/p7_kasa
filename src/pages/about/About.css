@@ -1,3 +1,24 @@
 .accordion {
     list-style: none;
+    margin: auto;
 }
+.about-intro {
+text-align: center;
+margin: auto;
+}
+
+@media screen and (min-width:1024px) {
+    .accordion {
+    width: 80%;
+    }
+    .about-intro {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width:481px) and (max-width:1023px) {
+    .accordion {
+        width: 80%;
+    }
+}
+    

@@ -1,7 +1,6 @@
 
 figure {
     display: flex;
-    margin: 15px;
     position: relative;
     border-radius: 10px;
 
@@ -22,76 +21,62 @@ figure:hover {
     
 }
 figcaption {
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em #FF6060;
     font-family: Montserrat;
-    background-color: #FF6060 ;
     color: white;
-    font-size: 18px;
     display: block;
     position: absolute;
     bottom: 0;
     border-radius: 0px 0px 10px 10px;
   }
+  figure > figcaption {
+    overflow: hidden;
+    
+    
+  }
 
 @media screen and (min-width:1024px) {
+  
 
 figcaption {
     padding: 10px;
     margin-bottom: 4px;
-    width: 430px;
+    font-size: 20px;
     }
- figure {
-    flex: 1 1 30%;
- }
  .photo {
     aspect-ratio: 1/1;
-    width: 450px;
+    width: 100%;
  }
  
 }
 
 @media screen and (max-width:480px) {
 
-    .photo {
-        width: 100%;
-        object-fit: cover;
-        aspect-ratio: 3/2;
-        margin: auto;
-        height: auto;
-       
-    }
     ul {
         padding: 0;
     }
     figcaption {
-        bottom: 4px;
-        left: 0px;
-        width: 96.5%; 
-        padding: 6px;
-    }
+        padding: 10px;
+        margin-bottom: 4px;
+        font-size: 20px;
+        }
+     .photo {
+        aspect-ratio: 4/3;
+        width: 100%;
+     }
 }
 
 @media screen and (min-width:481px) and (max-width:1023px) {
 
 
-figure {
-    
-    flex-direction: column;
-    width: 40%;
-    flex-wrap: wrap;
-    margin: 15px auto;
- }
-
-
-.photo {
-    object-fit: cover;
-    width: 100%;
-    height: auto;
-    aspect-ratio: 1/1;
- }
- figcaption {
-    bottom: 4px;
-    width: 95%;
-    padding: 8px;
-}
+    figcaption {
+        padding: 10px;
+        margin-bottom: 4px;
+        font-size: 20px;
+        }
+     .photo {
+        aspect-ratio: 1/1;
+        width: 100%;
+     }
 
 }

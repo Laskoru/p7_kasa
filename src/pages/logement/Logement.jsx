@@ -1,8 +1,9 @@
 import "./Logement.css"
 import Accordion from "../../components/Accordion/Accordion";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 import React,{useState, useEffect} from 'react';
 import Slider from "../../components/Carroussel/Carroussel"
+import Error from "../../pages/error/Page404";
 
 
 
@@ -24,6 +25,8 @@ const Logement = () => {
   fetchData()
 }, [setData, id])
 
+if(data.id === id) {
+  
   return (
     <body key={data.id}>
   <div className="slider">
@@ -63,6 +66,14 @@ const Logement = () => {
   
   
     )
+} else {
+  return (
+    <Error />
+
+  )
+}
+
+  
 }
 
   

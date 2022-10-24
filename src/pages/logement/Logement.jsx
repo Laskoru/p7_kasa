@@ -1,6 +1,6 @@
 import "./Logement.css"
 import Accordion from "../../components/Accordion/Accordion";
-import { useParams, Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import React,{useState, useEffect} from 'react';
 import Slider from "../../components/Carroussel/Carroussel"
 import Error from "../../pages/error/Page404";

@@ -150,6 +150,7 @@ line-height: 142.6%;
     }
     .logement-tag {
         border-radius: 5px;
+        font-size: 15px;
     }
     .logement-tags {
         display: flex;

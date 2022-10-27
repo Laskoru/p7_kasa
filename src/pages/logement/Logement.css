@@ -55,8 +55,6 @@ line-height: 142.6%;
     .logement-accordion {
         margin: 30px;
         width: 600px;
-        
-        
     }
     .logement-tag {
         border-radius: 10px;
@@ -130,7 +128,7 @@ line-height: 142.6%;
         width: 50px;
         font-size: 16px ;
         line-height: 20px;
-        margin-right: 50px;
+        margin-right: 20px;
     }
     .logement-prop {
         border-radius: 50%;
@@ -176,17 +174,17 @@ line-height: 142.6%;
         top: 15px;
     }
     .logement-name-photo {
+
         position: absolute;
         right: 0%;
         display: flex;
         align-items: center;
-
     }
     .logement-name {
         width: 50px;
         font-size: 16px ;
         line-height: 20px;
-        margin-right: 50px;
+        margin-right: 20px;
     }
     
     .logement-prop {

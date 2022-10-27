@@ -1,7 +1,7 @@
 import "./Card.css";
 import React,{useState, useEffect} from 'react';
 import { Link } from "react-router-dom";
-//import {CardImage, CardArticle} from "../../utils/style/themes"
+
 
 const Card = () => {
   const [data,setData]=useState([]);
@@ -14,10 +14,13 @@ const Card = () => {
     function(res){
     return res.json()
   }).then(function(data){
+    
     setData(data)
+    return null
   }).catch(
     function(err){
-      console.log(err, ' error')
+      console.log(err, "error")
+      return null
     }
     
   )
@@ -35,6 +38,8 @@ fetchData()
         <Link to={`/logement/${data.id}`}>
         <img src={data.cover} alt={data.title} className="photo" />
         <figcaption>{data.title}</figcaption>
+        
+
         </Link>
       </figure>
 

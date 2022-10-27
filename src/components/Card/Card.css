@@ -20,14 +20,24 @@ figure:hover {
     filter: saturate(2);
     
 }
-figcaption {
-    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em #FF6060;
-    font-family: Montserrat;
-    color: white;
-    display: block;
+/* .background {
+    background-color: #FF6060;
+    width: 100%;
+    min-height: 40px;
     position: absolute;
     bottom: 0;
+
+} */
+figcaption {
+    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em #FF6060;
+    display: flex;
+    font-family: Montserrat;
+    color: white;
     border-radius: 0px 0px 10px 10px;
+    background-color: #FF6060;
+    width: calc(100% - 20px);
+    position: absolute;
+    bottom: 0;
   }
   figure > figcaption {
     overflow: hidden;
@@ -41,7 +51,7 @@ figcaption {
 figcaption {
     padding: 10px;
     margin-bottom: 4px;
-    font-size: 20px;
+    font-size: 16px;
     }
  .photo {
     aspect-ratio: 1/1;
@@ -56,9 +66,9 @@ figcaption {
         padding: 0;
     }
     figcaption {
-        padding: 10px;
+        padding: 4px 10px;    
         margin-bottom: 4px;
-        font-size: 20px;
+        font-size: 15px;
         }
      .photo {
         aspect-ratio: 4/3;
@@ -68,11 +78,12 @@ figcaption {
 
 @media screen and (min-width:481px) and (max-width:1023px) {
 
-
+    figure {
+        margin: 2%;
+    }
     figcaption {
-        padding: 10px;
-        margin-bottom: 4px;
-        font-size: 20px;
+        padding: 5px 10px;
+        font-size: 15px;
         }
      .photo {
         aspect-ratio: 1/1;

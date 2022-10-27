@@ -1,22 +1,22 @@
-import "./App.css";
-import img from "./assets/IMG.png";
-import Card from "./components/Card/Card";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "./pages/home/home";
+import About from "./pages/about/About";
+import Header from "./components/Header/Header";
+import Footer from "./components/Footer/Footer";
+import Error from "./pages/error/Page404";
+import Logement from "./pages/logement/Logement";
+
 export default function App() {
   return (
-    <>
-      <div>
-        <div className="section1">
-          <div className="quote">Chez vous, partout et ailleurs</div>
-          <div className="maskgroup">
-            <img className="background img" src={img} alt="paysage" />
-          </div>
-        </div>
-      </div>
-      <>
-        <main>
-          <Card />
-        </main>
-      </>
-    </>
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="about" element={<About />} />
+        <Route path="logement/:id" element={<Logement />} />
+        <Route path="*" element={<Error />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   );
 }

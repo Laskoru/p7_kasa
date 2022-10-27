@@ -11,8 +11,9 @@ const Rating = ({rating}) => {
             {[...new Array(ratingMax)].map((arr, index) =>
             
             {
-                <li key={index} />
-                    return index < rating ? <RiStarSFill fill="gold" className="stars" /> : <RiStarSFill fill="grey" className="stars" />;
+                
+                return index < rating ? <RiStarSFill fill="gold" className="stars" key={"rating" + index} /> : <RiStarSFill fill="grey" className="stars" key={"rating" + index} />;
+                 
               })}
         </div>
     )

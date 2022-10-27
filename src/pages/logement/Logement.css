@@ -85,10 +85,9 @@ line-height: 142.6%;
         margin-right: 50px;
     }
     .logement-rating {
-        
+        font-size: 30px;
         text-align: right;
         margin-top: 10px;
-        font-size: 30px;
     }
     .logement-prop {
         border-radius: 50%;
@@ -116,6 +115,7 @@ line-height: 142.6%;
     .logement-rating {
         position: absolute;
         top: 15px;
+        font-size: 30px;
     }
     .logement-name-photo {
         position: absolute;
@@ -167,11 +167,13 @@ line-height: 142.6%;
         display: flex;
        flex-direction: row;
        flex-wrap: nowrap;
-        margin: 20px 20px 50px 20px;
+        margin: 20px 5px 50px 20px;
     }
     .logement-rating {
         position: absolute;
         top: 15px;
+        
+        
     }
     .logement-name-photo {
 
@@ -182,9 +184,9 @@ line-height: 142.6%;
     }
     .logement-name {
         width: 50px;
-        font-size: 16px ;
+        font-size: 14px ;
         line-height: 20px;
-        margin-right: 20px;
+        margin-right: 15px;
     }
     
     .logement-prop {

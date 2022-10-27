@@ -34,15 +34,10 @@ figcaption {
     font-family: Montserrat;
     color: white;
     border-radius: 0px 0px 10px 10px;
-    background-color: #FF6060;
+    background: linear-gradient(180deg, rgba(175,53,53,1) 0%, rgba(255,96,96,1) 100%, rgba(255,96,96,1) 100%);
     width: calc(100% - 20px);
     position: absolute;
     bottom: 0;
-  }
-  figure > figcaption {
-    overflow: hidden;
-    
-    
   }
 
 @media screen and (min-width:1024px) {
@@ -73,6 +68,9 @@ figcaption {
      .photo {
         aspect-ratio: 4/3;
         width: 100%;
+     }
+     figure {
+        margin: 2%;
      }
 }
 

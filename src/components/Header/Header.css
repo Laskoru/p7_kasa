@@ -46,7 +46,7 @@ header {
 }
 @media screen and (min-width:1024px) {
     header {
-        margin: 30px ;
+        margin: 30px 0px ;
     }
     .accueil, .apropos {
         font-size: 24px;

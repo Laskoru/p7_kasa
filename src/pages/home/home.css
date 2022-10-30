@@ -2,9 +2,7 @@ html {
     max-width: 1450px;
     margin: auto;
   }
-  main {
-    margin: 20px;
-  }.quote {
+.quote {
   
     font-family: 'Montserrat';
     font-style: normal;
@@ -85,10 +83,13 @@ html {
     @media screen and (min-width:1024px) {
   
       main {
-        margin: 30px;
+        width: 100%;
+        padding: 20px 0px;
         display: grid;
         grid-auto-flow: row;
         grid-template-columns: repeat(3, 1fr);
+        background-color: #F7F7F7;
+        border-radius: 25px;
       }
   
     }

@@ -21,7 +21,7 @@ footer {
 
 @media screen and (min-width:1024px) {
     footer {
-        margin: auto;
+        margin: 50px auto;
         height: 200px;
     }
     .quote_footer {

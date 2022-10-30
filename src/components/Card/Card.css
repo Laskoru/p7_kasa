@@ -29,7 +29,7 @@ figure:hover {
 
 } */
 figcaption {
-    text-shadow: 1px 1px 2px red, 0 0 1em blue, 0 0 0.2em #FF6060;
+    
     display: flex;
     font-family: Montserrat;
     color: white;

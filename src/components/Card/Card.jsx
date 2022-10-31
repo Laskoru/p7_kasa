@@ -14,7 +14,6 @@ const Card = () => {
     function(res){
     return res.json()
   }).then(function(data){
-    
     setData(data)
     return null
   }).catch(
@@ -38,8 +37,6 @@ fetchData()
         <Link to={`/logement/${data.id}`}>
         <img src={data.cover} alt={data.title} className="photo" />
         <figcaption>{data.title}</figcaption>
-        
-
         </Link>
       </figure>
 
